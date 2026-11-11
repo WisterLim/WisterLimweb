@@ -1,0 +1,119 @@
+media:
+  input: assets
+  output: /assets
+  rename: safe
+content:
+  - name: site
+    label: Website text, photos & links
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: name
+        label: Website name
+        type: string
+      - name: logo
+        label: Logo (optional)
+        type: image
+      - name: contact_email
+        label: Public contact email (optional)
+        type: string
+      - name: tally_url
+        label: Tally form URL (https://tally.so/r/...)
+        type: string
+      - name: hero_photos
+        label: Homepage hover slideshow photos (order matters)
+        type: image
+        list: true
+      - name: about_photos
+        label: About photos (first two displayed, static)
+        type: image
+        list: true
+      - name: hero_kicker_en
+        label: Hero label (English)
+        type: string
+      - name: hero_kicker_zh
+        label: Hero label (Simplified Chinese)
+        type: string
+      - name: hero_title_en
+        label: Hero headline (English)
+        type: string
+      - name: hero_title_zh
+        label: Hero headline (Simplified Chinese)
+        type: string
+      - name: hero_description_en
+        label: Hero description (English)
+        type: text
+      - name: hero_description_zh
+        label: Hero description (Simplified Chinese)
+        type: text
+      - name: about_title_en
+        label: About headline (English)
+        type: string
+      - name: about_title_zh
+        label: About headline (Simplified Chinese)
+        type: string
+      - name: about_body_en
+        label: About text (English)
+        type: text
+      - name: about_body_zh
+        label: About text (Simplified Chinese)
+        type: text
+      - name: socials
+        label: Social media links
+        type: object
+        fields:
+          - { name: Instagram, type: string }
+          - { name: Facebook, type: string }
+          - { name: Threads, type: string }
+          - { name: LinkedIn, type: string }
+          - { name: X, type: string }
+          - { name: TikTok, type: string }
+          - { name: WhatsApp, type: string }
+  - name: projects
+    label: Portfolio projects
+    type: file
+    path: data/projects.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: Unique project ID (lowercase, hyphens), type: string, required: true }
+      - { name: featured, label: Show in portfolio, type: boolean }
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - { name: website, label: Website }
+            - { name: automation, label: Automation }
+      - { name: title_en, label: Project name (English), type: string }
+      - { name: title_zh, label: Project name (Simplified Chinese), type: string }
+      - { name: type_en, label: Project category text (English), type: string }
+      - { name: type_zh, label: Project category text (Chinese), type: string }
+      - { name: cover, label: Cover screenshot, type: image }
+      - name: video
+        label: Hover preview MP4 (optional)
+        type: file
+        options:
+          extensions: [mp4, webm]
+      - { name: external_url, label: Live project URL (optional), type: string }
+      - { name: description_en, label: Description (English), type: text }
+      - { name: description_zh, label: Description (Chinese), type: text }
+      - { name: role_en, label: Your role (English), type: string }
+      - { name: role_zh, label: Your role (Chinese), type: string }
+  - name: testimonials
+    label: Testimonials
+    type: file
+    path: data/testimonials.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: Unique ID, type: string }
+      - { name: label_en, label: Label (English), type: string }
+      - { name: label_zh, label: Label (Chinese), type: string }
+      - { name: image, label: Testimonial screenshot (optional), type: image }
+      - name: video
+        label: Testimonial video (optional)
+        type: file
+        options:
+          extensions: [mp4, webm]
