@@ -35,30 +35,35 @@ content:
       - name: hero_kicker_zh
         label: Hero label (Simplified Chinese)
         type: string
+      - { name: hero_kicker_zh_tw, label: Hero label (Traditional Chinese), type: string }
       - name: hero_title_en
         label: Hero headline (English)
         type: string
       - name: hero_title_zh
         label: Hero headline (Simplified Chinese)
         type: string
+      - { name: hero_title_zh_tw, label: Hero headline (Traditional Chinese), type: string }
       - name: hero_description_en
         label: Hero description (English)
         type: text
       - name: hero_description_zh
         label: Hero description (Simplified Chinese)
         type: text
+      - { name: hero_description_zh_tw, label: Hero description (Traditional Chinese), type: text }
       - name: about_title_en
         label: About headline (English)
         type: string
       - name: about_title_zh
         label: About headline (Simplified Chinese)
         type: string
+      - { name: about_title_zh_tw, label: About headline (Traditional Chinese), type: string }
       - name: about_body_en
         label: About text (English)
         type: text
       - name: about_body_zh
         label: About text (Simplified Chinese)
         type: text
+      - { name: about_body_zh_tw, label: About text (Traditional Chinese), type: text }
       - name: socials
         label: Social media links
         type: object
@@ -91,8 +96,10 @@ content:
             - { name: video-editing, label: Video Editing }
       - { name: title_en, label: Project name (English), type: string }
       - { name: title_zh, label: Project name (Simplified Chinese), type: string }
+      - { name: title_zh_tw, label: Project name (Traditional Chinese), type: string }
       - { name: type_en, label: Project category text (English), type: string }
       - { name: type_zh, label: Project category text (Chinese), type: string }
+      - { name: type_zh_tw, label: Project category text (Traditional Chinese), type: string }
       - { name: cover, label: Cover screenshot, type: image }
       - name: video
         label: Hover preview MP4 (optional)
@@ -102,8 +109,10 @@ content:
       - { name: external_url, label: Live project URL (optional), type: string }
       - { name: description_en, label: Description (English), type: text }
       - { name: description_zh, label: Description (Chinese), type: text }
+      - { name: description_zh_tw, label: Description (Traditional Chinese), type: text }
       - { name: role_en, label: Your role (English), type: string }
       - { name: role_zh, label: Your role (Chinese), type: string }
+      - { name: role_zh_tw, label: Your role (Traditional Chinese), type: string }
   - name: testimonials
     label: Testimonials
     type: file
@@ -114,6 +123,7 @@ content:
       - { name: id, label: Unique ID, type: string }
       - { name: label_en, label: Label (English), type: string }
       - { name: label_zh, label: Label (Chinese), type: string }
+      - { name: label_zh_tw, label: Label (Traditional Chinese), type: string }
       - { name: image, label: Testimonial screenshot (optional), type: image }
       - { name: poster, label: Video poster (optional), type: image }
       - name: video
