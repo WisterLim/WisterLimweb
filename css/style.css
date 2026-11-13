@@ -104,3 +104,25 @@ body{font-size:var(--body-size);line-height:1.55}
 @media(max-width:760px){.hero-stage{height:540px;min-height:0}.giant-name{font-size:clamp(65px,17vw,120px);top:2%;left:4%;z-index:4}.hero-photo-stage{right:0%;width:82%;top:25%;height:78%}.giant-surname{display:none}.hero-photo{overflow:visible!important}.photo-hint{bottom:13%;left:5%;right:5%;font-size:8px}.hero-under{padding-top:4px}.section{padding-block:75px}.work-grid{grid-template-columns:1fr;gap:38px}.work-media{aspect-ratio:16/10!important}.work-caption{min-height:0}.services-heading{margin-bottom:38px}.service-item{grid-template-columns:25px minmax(0,1fr) 26px;gap:9px;padding:25px 0}.service-item h3{font-size:clamp(23px,6vw,37px)}.service-item p{font-size:13px}.about-images{height:465px}.about-images img:first-child{width:78%;height:87%}.about-images img:nth-child(2){width:48%;height:48%}.feedback-frame{aspect-ratio:4/5}.contact-aside .contact-whatsapp{font-size:25px!important}}
 @media(max-width:440px){.hero-stage{height:475px}.giant-name{font-size:17vw;top:2%;left:4%}.hero-photo-stage{width:85%;right:-5%;top:25%;height:75%}.about-images{height:365px}.testimonial-grid{gap:12px}.feedback-card p{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.hero-slide{transition:none}.reveal{opacity:1;transform:none;transition:none}}
+
+/* V4.1 — targeted visual refinements. Hero untouched. */
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:58px 32px}
+.work-card,.work-media,.work-visual-link{min-width:0}
+.work-card:nth-child(even){margin-top:0!important}
+.work-media{width:100%;height:auto!important;aspect-ratio:16/10!important;position:relative;overflow:hidden;background:#e9e7e1}
+.work-visual-link{position:absolute!important;inset:0!important;height:100%!important;width:100%!important;overflow:hidden!important;display:block!important}
+.work-visual-link img,.work-visual-link video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;max-height:none!important;aspect-ratio:auto!important;margin:0!important;background:#e9e7e1!important}
+.work-caption{min-height:82px!important;margin-top:0;align-items:flex-start!important}
+.service-item{grid-template-columns:46px minmax(0,1fr)!important}
+.service-symbol{display:none!important}
+/* Two generous columns make written feedback legible instead of tiny tiles. */
+.testimonial-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:42px 30px!important;align-items:start}
+.feedback-card{min-width:0;display:flex;flex-direction:column;gap:12px}
+.feedback-frame{width:100%;aspect-ratio:16/10!important;overflow:hidden!important;background:#fff!important;display:grid;place-items:center;border:1px solid rgba(15,17,15,.08)}
+.feedback-frame>img,.feedback-frame>video{height:100%!important;width:100%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important;display:block;background:#fff!important}
+.feedback-frame>video{background:#ece9e2!important}
+/* 3 equal link columns, instead of unpredictable line wraps. */
+.social-links{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 15px!important;align-items:center}
+.social-links a{white-space:nowrap;min-width:0;gap:6px;font-size:12px!important;width:max-content;max-width:100%}
+@media(max-width:900px){.testimonial-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.work-grid{grid-template-columns:1fr;gap:36px}.work-media{aspect-ratio:16/10!important}.testimonial-grid{grid-template-columns:1fr!important;gap:32px!important}.feedback-frame{aspect-ratio:16/10!important}.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
