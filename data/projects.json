@@ -13,7 +13,11 @@
     "description_en": "A focused landing page with clear messaging, a considered layout and a more direct path for visitor enquiries.",
     "description_zh": "以清晰的信息层次、精简的排版和明确的联系路径，设计更聚焦的落地页。",
     "role_en": "Landing page layout and design",
-    "role_zh": "落地页结构与设计"
+    "role_zh": "落地页结构与设计",
+    "title_zh_tw": "BWW 落地頁",
+    "type_zh_tw": "落地頁 · 網頁設計",
+    "description_zh_tw": "以清晰的信息層次、精簡的排版和明確的聯繫路徑，設計更聚焦的落地頁。",
+    "role_zh_tw": "落地頁結構與設計"
   },
   {
     "id": "bailey-seasonal",
@@ -29,7 +33,11 @@
     "description_en": "A dedicated service page presenting seasonal cleanup information with a structured layout and clear next steps.",
     "description_zh": "针对季节性清理服务规划页面结构，让访客更容易了解服务并采取下一步行动。",
     "role_en": "Service page design and layout",
-    "role_zh": "服务页面设计与排版"
+    "role_zh": "服务页面设计与排版",
+    "title_zh_tw": "季節性庭院清理服務頁面",
+    "type_zh_tw": "服務頁面 · 網站",
+    "description_zh_tw": "針對季節性清理服務規劃頁面結構，讓訪客更容易瞭解服務並採取下一步行動。",
+    "role_zh_tw": "服務頁面設計與排版"
   },
   {
     "id": "funnel-automation",
@@ -45,7 +53,11 @@
     "description_en": "A visual overview of the journey from a new enquiry to follow-up, with workflow steps arranged for clarity.",
     "description_zh": "展示从潜在客户提交咨询到后续跟进的流程，以及各环节如何衔接。",
     "role_en": "Workflow planning and setup",
-    "role_zh": "流程规划与设置"
+    "role_zh": "流程规划与设置",
+    "title_zh_tw": "潛在客戶收集與跟進流程",
+    "type_zh_tw": "漏斗 · 自動化",
+    "description_zh_tw": "展示從潛在客戶提交諮詢到後續跟進的流程，以及各環節如何銜接。",
+    "role_zh_tw": "流程規劃與設置"
   },
   {
     "id": "manychat",
@@ -61,6 +73,10 @@
     "description_en": "A messaging workflow designed to organize automated responses and guide conversations through clearly defined steps.",
     "description_zh": "以清晰的消息路径安排自动回复和互动步骤，让对话流程更有条理。",
     "role_en": "Messaging workflow setup",
-    "role_zh": "消息自动化配置"
+    "role_zh": "消息自动化配置",
+    "title_zh_tw": "ManyChat 私信自動化流程",
+    "type_zh_tw": "ManyChat · 消息自動化",
+    "description_zh_tw": "以清晰的消息路徑安排自動回覆和互動步驟，讓對話流程更有條理。",
+    "role_zh_tw": "消息自動化配置"
   }
 ]
