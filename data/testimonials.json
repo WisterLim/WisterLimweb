@@ -4,14 +4,16 @@
     "label_en": "Client feedback · 01",
     "label_zh": "客户反馈 · 01",
     "image": "/assets/images/testimonial-1.webp",
-    "video": ""
+    "video": "",
+    "label_zh_tw": "客戶反饋 · 01"
   },
   {
     "id": "feedback-two",
     "label_en": "Client feedback · 02",
     "label_zh": "客户反馈 · 02",
     "image": "/assets/images/testimonial-2.webp",
-    "video": ""
+    "video": "",
+    "label_zh_tw": "客戶反饋 · 02"
   },
   {
     "id": "video-one",
@@ -19,7 +21,8 @@
     "label_zh": "视频反馈 · 01",
     "image": "",
     "video": "/assets/videos/testimonial-video-1.mp4",
-    "poster": "/assets/images/testimonial-video-1-poster.webp"
+    "poster": "/assets/images/testimonial-video-1-poster.webp",
+    "label_zh_tw": "視頻反饋 · 01"
   },
   {
     "id": "video-two",
@@ -27,6 +30,7 @@
     "label_zh": "视频反馈 · 02",
     "image": "",
     "video": "/assets/videos/testimonial-video-2.mp4",
-    "poster": "/assets/images/testimonial-video-2-poster.webp"
+    "poster": "/assets/images/testimonial-video-2-poster.webp",
+    "label_zh_tw": "視頻反饋 · 02"
   }
 ]
