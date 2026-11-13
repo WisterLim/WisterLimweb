@@ -126,3 +126,36 @@ body{font-size:var(--body-size);line-height:1.55}
 .social-links a{white-space:nowrap;min-width:0;gap:6px;font-size:12px!important;width:max-content;max-width:100%}
 @media(max-width:900px){.testimonial-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.work-grid{grid-template-columns:1fr;gap:36px}.work-media{aspect-ratio:16/10!important}.testimonial-grid{grid-template-columns:1fr!important;gap:32px!important}.feedback-frame{aspect-ratio:16/10!important}.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* V4.2: Keep each portrait video and its matching poster fully visible. */
+.feedback-frame>video{object-fit:contain!important;object-position:center center!important;background:#ece9e2!important}
+.feedback-frame:has(video){background:#ece9e2!important}
+
+/* CJK lettering needs room to breathe; avoid orphaned final characters. */
+.chinese-layout .hero-intro h1{font-family:'Noto Sans CJK SC','Noto Sans SC','Microsoft YaHei',sans-serif;font-size:clamp(42px,4.5vw,70px)!important;font-weight:750;line-height:1.26;letter-spacing:-.045em;max-width:760px;overflow-wrap:normal;word-break:keep-all}
+.chinese-layout .section h2,.chinese-layout .services-heading h2,.chinese-layout .feedback-section h2,.chinese-layout .contact-top h2{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif;font-size:clamp(44px,5.2vw,80px)!important;line-height:1.2;letter-spacing:-.04em;word-break:keep-all}
+.chinese-layout .service-item h3{letter-spacing:-.035em;line-height:1.3}
+html[lang="zh-TW"] .chinese-layout .hero-intro h1,html[lang="zh-TW"] .chinese-layout .section h2{font-family:'Noto Sans CJK TC','Microsoft JhengHei',sans-serif}
+@media(max-width:760px){.chinese-layout .hero-intro h1{font-size:clamp(35px,8vw,56px)!important;line-height:1.24}.chinese-layout .section h2,.chinese-layout .services-heading h2,.chinese-layout .feedback-section h2{font-size:clamp(39px,9vw,65px)!important}.lang-toggle{padding:8px 6px;font-size:11px}}
+
+/* V4.3: simpler editorial portfolio heading and discreet photo counter. */
+#work .split-heading>p{display:none!important}
+#work .split-heading h2{max-width:none}
+.photo-hint{justify-content:flex-end!important}
+.social-glyph .whatsapp-icon{display:block;width:15px;height:15px}
+
+/* V4.4 — cut-out editorial Hero. Two dark painted strokes sit behind the
+   transparent PNGs. Only the people fade into the page at the bottom. */
+.hero-photo-stage{left:34%!important;top:1%!important;width:41%!important;height:99%!important;max-width:650px!important;isolation:isolate;overflow:visible!important}
+.hero-brush-strokes{position:absolute;z-index:0;pointer-events:none;left:-23%;top:11%;width:148%;height:83%;overflow:visible;filter:drop-shadow(0 9px 5px rgba(30,40,35,.08))}
+.hero-photo{position:relative;z-index:1;width:100%;height:100%;background:transparent!important;overflow:visible!important;clip-path:none!important;-webkit-mask-image:none!important;mask-image:none!important}
+.hero-photo::after{display:none!important}
+.hero-slide{width:100%;height:100%;object-fit:contain!important;object-position:bottom center!important;opacity:0;filter:drop-shadow(0 12px 12px rgba(24,30,26,.09));-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 76%,rgba(0,0,0,.93) 84%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 76%,rgba(0,0,0,.93) 84%,transparent 100%);transition:opacity .38s ease;transform:none!important}
+.hero-slide.active{opacity:1}
+.hero-stage .giant-name{z-index:2;mix-blend-mode:normal}
+.hero-photo-stage{z-index:3}
+.hero-photo-stage .photo-hint{left:auto;right:2%;bottom:11%;color:#313a34;text-shadow:none;justify-content:flex-end;pointer-events:none}
+.hero-photo-stage .photo-hint span{padding:5px 8px;background:rgba(234,233,229,.65)}
+@media(max-width:900px){.hero-photo-stage{left:30%!important;top:6%!important;width:53%!important;height:88%!important}.hero-brush-strokes{left:-23%;top:16%;width:155%;height:76%}}
+@media(max-width:760px){.hero-stage{overflow:hidden;isolation:isolate}.hero-photo-stage{left:21%!important;right:auto!important;top:19%!important;width:74%!important;height:80%!important;max-width:none!important}.hero-brush-strokes{left:-14%;top:12%;width:130%;height:79%}.hero-stage .giant-name{z-index:4;pointer-events:none}.hero-photo-stage{z-index:3}.hero-slide{-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 78%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 78%,transparent 100%)}.hero-photo-stage .photo-hint{right:6%;bottom:5%;font-size:9px}}
+@media(max-width:440px){.hero-photo-stage{left:16%!important;top:21%!important;width:86%!important;height:78%!important}.hero-brush-strokes{left:-16%;width:138%}}
