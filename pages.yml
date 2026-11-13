@@ -86,6 +86,9 @@ content:
           values:
             - { name: website, label: Website }
             - { name: automation, label: Automation }
+            - { name: seo, label: SEO }
+            - { name: carousels, label: Carousels }
+            - { name: video-editing, label: Video Editing }
       - { name: title_en, label: Project name (English), type: string }
       - { name: title_zh, label: Project name (Simplified Chinese), type: string }
       - { name: type_en, label: Project category text (English), type: string }
@@ -112,6 +115,7 @@ content:
       - { name: label_en, label: Label (English), type: string }
       - { name: label_zh, label: Label (Chinese), type: string }
       - { name: image, label: Testimonial screenshot (optional), type: image }
+      - { name: poster, label: Video poster (optional), type: image }
       - name: video
         label: Testimonial video (optional)
         type: file
