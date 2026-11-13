@@ -21,7 +21,7 @@
     "label_zh": "视频反馈 · 01",
     "image": "",
     "video": "/assets/videos/testimonial-video-1.mp4",
-    "poster": "/assets/images/testimonial-video-1-poster.webp",
+    "poster": "/assets/images/testimonial-video-1-cover-v47.png",
     "label_zh_tw": "視頻反饋 · 01"
   },
   {
@@ -30,7 +30,7 @@
     "label_zh": "视频反馈 · 02",
     "image": "",
     "video": "/assets/videos/testimonial-video-2.mp4",
-    "poster": "/assets/images/testimonial-video-2-poster.webp",
+    "poster": "/assets/images/testimonial-video-2-cover-v47.png",
     "label_zh_tw": "視頻反饋 · 02"
   }
 ]
