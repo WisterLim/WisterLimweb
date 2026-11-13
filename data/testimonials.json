@@ -18,13 +18,15 @@
     "label_en": "Video feedback · 01",
     "label_zh": "视频反馈 · 01",
     "image": "",
-    "video": "/assets/videos/testimonial-video-1.mp4"
+    "video": "/assets/videos/testimonial-video-1.mp4",
+    "poster": "/assets/images/testimonial-video-1-poster.webp"
   },
   {
     "id": "video-two",
     "label_en": "Video feedback · 02",
     "label_zh": "视频反馈 · 02",
     "image": "",
-    "video": "/assets/videos/testimonial-video-2.mp4"
+    "video": "/assets/videos/testimonial-video-2.mp4",
+    "poster": "/assets/images/testimonial-video-2-poster.webp"
   }
 ]
