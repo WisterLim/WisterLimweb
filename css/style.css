@@ -181,3 +181,8 @@ html[lang="zh-TW"] .chinese-layout .hero-intro h1,html[lang="zh-TW"] .chinese-la
 .enquiry-close{margin-left:auto;border:0;text-decoration:underline;text-underline-offset:4px}
 .enquiry-panel .tally-embed{display:block;width:100%;min-height:1050px;background:transparent}
 @media(max-width:760px){.form-placeholder .enquiry-trigger{width:100%;min-height:66px}.enquiry-toolbar{gap:10px}.enquiry-close{margin-left:0}.enquiry-panel .tally-embed{min-height:1200px}}
+
+/* Tally's default form uses dark lettering; keep it on an opaque light surface. */
+.enquiry-form-surface{background:#f8f8f6;border-radius:10px;padding:26px 18px 14px;color:#242721;overflow:hidden}
+.enquiry-panel .enquiry-form-surface .tally-embed{display:block;width:100%;min-height:280px;height:280px;background:#fff;border:0;overflow:hidden}
+@media(max-width:760px){.enquiry-form-surface{padding:18px 10px 12px}.enquiry-panel .enquiry-form-surface .tally-embed{min-height:280px;height:280px}}
