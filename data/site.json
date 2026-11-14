@@ -1,8 +1,5 @@
 {
   "name": "Wister Lim",
-  "logo": "",
-  "contact_email": "",
-  "tally_url": "",
   "hero_photos": [
     "/assets/images/hero-cutout-1509.png",
     "/assets/images/hero-cutout-2816.png",
@@ -13,6 +10,21 @@
     "/assets/images/img_2571.webp",
     "/assets/images/img_2880.webp"
   ],
+  "hero_kicker_en": "WEB DESIGNER / DEVELOPER / DIGITAL SYSTEMS",
+  "hero_kicker_zh": "网页设计 / 网站开发 / 自动化系统",
+  "hero_kicker_zh_tw": "網頁設計 / 網站開發 / 自動化系統",
+  "hero_title_en": "TEST",
+  "hero_title_zh": "不止于平凡的设计",
+  "hero_title_zh_tw": "不止於平凡的設計",
+  "hero_description_en": "I shape websites, digital experiences and thoughtful automations for people building something meaningful.",
+  "hero_description_zh": "我为认真经营品牌的人，打造具有辨识度的网站、数字体验与实用的自动化系统。",
+  "hero_description_zh_tw": "我為認真經營品牌的人，打造具有辨識度的網站、數字體驗與實用的自動化系統。",
+  "about_title_en": "Creative by instinct. Intentional by design.",
+  "about_title_zh": "以创意为起点，以目标为方向。",
+  "about_title_zh_tw": "以創意為起點，以目標為方向。",
+  "about_body_en": "I’m Wister, a Malaysia-based web designer and developer. I combine visual design with practical thinking — from websites and landing pages to lead capture and follow-up workflows. My background in quality control and process analysis shapes how I work: I care about the details, the user journey, and what happens after someone clicks.",
+  "about_body_zh": "我是 Wister，来自马来西亚的网页设计与开发者。我结合视觉设计与实际业务需求，制作网站、落地页、潜在客户收集及后续跟进流程。过去在质量管理与流程分析方面的经验，让我特别重视细节、访客体验，以及客户点击之后会发生什么。",
+  "about_body_zh_tw": "我是 Wister，來自馬來西亞的網頁設計與開發者。我結合視覺設計與實際業務需求，製作網站、落地頁、潛在客戶收集及後續跟進流程。過去在質量管理與流程分析方面的經驗，讓我特別重視細節、訪客體驗，以及客戶點擊之後會發生什麼。",
   "socials": {
     "Instagram": "https://www.instagram.com/wisterlim_designer/",
     "Facebook": "https://www.facebook.com/wister.lim/",
@@ -21,20 +33,5 @@
     "X": "https://x.com/WisterLim_1",
     "TikTok": "https://www.tiktok.com/@wisterlim_web",
     "WhatsApp": "https://wa.me/601137492087"
-  },
-  "hero_kicker_en": "WEB DESIGNER / DEVELOPER / DIGITAL SYSTEMS",
-  "hero_kicker_zh": "网页设计 / 网站开发 / 自动化系统",
-  "hero_title_en": "Design beyond the ordinary",
-  "hero_title_zh": "不止于平凡的设计",
-  "hero_description_en": "I shape websites, digital experiences and thoughtful automations for people building something meaningful.",
-  "hero_description_zh": "我为认真经营品牌的人，打造具有辨识度的网站、数字体验与实用的自动化系统。",
-  "about_title_en": "Creative by instinct. Intentional by design.",
-  "about_title_zh": "以创意为起点，以目标为方向。",
-  "about_body_en": "I’m Wister, a Malaysia-based web designer and developer. I combine visual design with practical thinking — from websites and landing pages to lead capture and follow-up workflows. My background in quality control and process analysis shapes how I work: I care about the details, the user journey, and what happens after someone clicks.",
-  "about_body_zh": "我是 Wister，来自马来西亚的网页设计与开发者。我结合视觉设计与实际业务需求，制作网站、落地页、潜在客户收集及后续跟进流程。过去在质量管理与流程分析方面的经验，让我特别重视细节、访客体验，以及客户点击之后会发生什么。",
-  "hero_kicker_zh_tw": "網頁設計 / 網站開發 / 自動化系統",
-  "hero_title_zh_tw": "不止於平凡的設計",
-  "hero_description_zh_tw": "我為認真經營品牌的人，打造具有辨識度的網站、數字體驗與實用的自動化系統。",
-  "about_title_zh_tw": "以創意為起點，以目標為方向。",
-  "about_body_zh_tw": "我是 Wister，來自馬來西亞的網頁設計與開發者。我結合視覺設計與實際業務需求，製作網站、落地頁、潛在客戶收集及後續跟進流程。過去在質量管理與流程分析方面的經驗，讓我特別重視細節、訪客體驗，以及客戶點擊之後會發生什麼。"
+  }
 }
