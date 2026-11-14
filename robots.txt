@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wisterlimweb.pages.dev/sitemap.xml
