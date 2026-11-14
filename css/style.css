@@ -167,3 +167,17 @@ html[lang="zh-TW"] .chinese-layout .hero-intro h1,html[lang="zh-TW"] .chinese-la
 .feedback-frame.testimonial-video-frame.testimonial-playing>video{opacity:1}
 .testimonial-preview-button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:transparent;cursor:pointer;z-index:3}
 .testimonial-preview-button:focus-visible{outline:3px solid #839984;outline-offset:-4px}
+
+/* Project enquiry CTA opens the three-language Tally form without leaving the site. */
+.form-placeholder .enquiry-trigger{border:0;cursor:pointer;min-height:70px;padding:21px 28px;font-size:13px;letter-spacing:.02em;text-transform:none;transition:transform .25s,background .25s}
+.form-placeholder .enquiry-trigger:hover{background:#e2ead9;transform:translateY(-3px)}
+.form-placeholder .note{margin:19px 0 0;color:#aeb7aa;font-size:12px;letter-spacing:.01em}
+.enquiry-panel{margin-top:34px;border-top:1px solid #6e776c;padding-top:18px}
+.enquiry-panel[hidden]{display:none}
+.enquiry-toolbar{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:18px;font-size:11px;color:#c7cec3}
+.enquiry-languages{display:flex;gap:6px}
+.enquiry-languages button,.enquiry-close{color:#e9eee7;background:transparent;border:1px solid #60695f;padding:9px 12px;cursor:pointer;font-size:11px}
+.enquiry-languages button[aria-pressed="true"]{background:#c8d3c1;border-color:#c8d3c1;color:#191d18;font-weight:700}
+.enquiry-close{margin-left:auto;border:0;text-decoration:underline;text-underline-offset:4px}
+.enquiry-panel .tally-embed{display:block;width:100%;min-height:1050px;background:transparent}
+@media(max-width:760px){.form-placeholder .enquiry-trigger{width:100%;min-height:66px}.enquiry-toolbar{gap:10px}.enquiry-close{margin-left:0}.enquiry-panel .tally-embed{min-height:1200px}}
