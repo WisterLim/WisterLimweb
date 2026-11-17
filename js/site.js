@@ -96,6 +96,23 @@ function renderForm(){
  host.querySelectorAll('[data-form-lang]').forEach(button=>button.addEventListener('click',()=>{state.lang=button.dataset.formLang;localStorage.setItem('wister-lang',state.lang);applyLanguage()}));
 }
 function renderDetail(){const target=$('#project-detail');if(!target)return;const id=new URLSearchParams(location.search).get('id');const p=state.projects.find(a=>a.id===id);if(!p){text('#detail-title',state.lang==='en'?'Project not found':'找不到项目');return}document.title=value(p,'title')+' — Wister Lim';text('#detail-title',value(p,'title'));text('#detail-type',value(p,'type'));text('#detail-description',value(p,'description'));text('#detail-role',value(p,'role'));const media=$('#detail-media');if(media)media.innerHTML=`<img src="${esc(p.cover)}" alt="${esc(value(p,'title'))}">${p.video?`<video src="${esc(p.video)}" controls playsinline preload="metadata" style="margin-top:24px"></video>`:''}`;const ext=$('#detail-external');if(ext&&p.external_url){ext.href=p.external_url;ext.hidden=false}else if(ext)ext.hidden=true}
-async function init(){try{const [s,p,t]=await Promise.all(['site','projects','testimonials'].map(n=>fetch('/data/'+n+'.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(n+' failed');return r.json()})));state.site=s;state.projects=p;state.testimonials=t;renderHero();applyLanguage();}catch(err){console.error('Could not load site content',err);const c=$('#work-grid');if(c)c.innerHTML='<p>Site data could not be loaded. Preview through a local server instead of opening the HTML file directly.</p>'}text('#year',new Date().getFullYear());initTallyPopup();$('#lang-toggle')?.addEventListener('change',e=>{state.lang=e.target.value;localStorage.setItem('wister-lang',state.lang);applyLanguage()});$('#menu-toggle')?.addEventListener('click',()=>{const nav=$('.nav');nav?.classList.toggle('open');$('#menu-toggle').setAttribute('aria-expanded',String(nav?.classList.contains('open')))});$$('.nav a').forEach(a=>a.addEventListener('click',()=>$('.nav')?.classList.remove('open')));$$('.filter').forEach(b=>b.addEventListener('click',()=>{state.filter=b.dataset.filter;$$('.filter').forEach(e=>e.classList.toggle('active',e===b));renderProjects()}));observeReveal()}
+// Touch devices cannot hover: rotate the hero photographs automatically on phones.
+function initMobileHeroAutoplay(){
+ const frame=$('#hero-photo'),slides=$$('.hero-slide'),counter=$('#hero-counter');
+ if(!frame||slides.length<2)return;
+ const phone=matchMedia('(max-width:760px) and (hover:none)');
+ const reduced=matchMedia('(prefers-reduced-motion:reduce)');
+ let timer=null;
+ const change=()=>{const current=slides.findIndex(s=>s.classList.contains('active'));const next=(current+1)%slides.length;slides.forEach((slide,index)=>slide.classList.toggle('active',index===next));if(counter)counter.textContent=`${String(next+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`};
+ const stop=()=>{if(timer!==null){clearInterval(timer);timer=null}};
+ const start=()=>{stop();if(phone.matches&&!reduced.matches&&!document.hidden)timer=setInterval(change,3000)};
+ frame.addEventListener('mouseenter',e=>{if(phone.matches)e.stopImmediatePropagation()},true);
+ frame.addEventListener('click',e=>{if(!phone.matches)return;e.stopImmediatePropagation();change();start()},true);
+ document.addEventListener('visibilitychange',start);
+ phone.addEventListener('change',start);
+ reduced.addEventListener('change',start);
+ start();
+}
+async function init(){try{const [s,p,t]=await Promise.all(['site','projects','testimonials'].map(n=>fetch('/data/'+n+'.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error(n+' failed');return r.json()})));state.site=s;state.projects=p;state.testimonials=t;renderHero();initMobileHeroAutoplay();applyLanguage();}catch(err){console.error('Could not load site content',err);const c=$('#work-grid');if(c)c.innerHTML='<p>Site data could not be loaded. Preview through a local server instead of opening the HTML file directly.</p>'}text('#year',new Date().getFullYear());initTallyPopup();$('#lang-toggle')?.addEventListener('change',e=>{state.lang=e.target.value;localStorage.setItem('wister-lang',state.lang);applyLanguage()});$('#menu-toggle')?.addEventListener('click',()=>{const nav=$('.nav');nav?.classList.toggle('open');$('#menu-toggle').setAttribute('aria-expanded',String(nav?.classList.contains('open')))});$$('.nav a').forEach(a=>a.addEventListener('click',()=>$('.nav')?.classList.remove('open')));$$('.filter').forEach(b=>b.addEventListener('click',()=>{state.filter=b.dataset.filter;$$('.filter').forEach(e=>e.classList.toggle('active',e===b));renderProjects()}));observeReveal()}
 init();
 })();
