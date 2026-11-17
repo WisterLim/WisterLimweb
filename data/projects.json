@@ -74,5 +74,43 @@
     "role_en": "Messaging workflow setup",
     "role_zh": "消息自动化配置",
     "role_zh_tw": "消息自動化配置"
+  },
+  {
+    "id": "vitalis website",
+    "featured": true,
+    "category": "website",
+    "title_en": "VITALIS — Beauty & Wellness E-Commerce",
+    "title_zh": "VITALIS — 美容与健康电商",
+    "title_zh_tw": "VITALIS — 美容與健康電商",
+    "type_en": "E-Commerce / Beauty & Wellness ",
+    "type_zh": "电商网站 / 美容与健康",
+    "type_zh_tw": "電商網站 / 美容與健康",
+    "cover": "/assets/e4950159-6319-4940-bf11-06ea0257cdba.jpeg",
+    "external_url": "https://vitalis-mocha-seven.vercel.app/",
+    "description_en": "A modern beauty and wellness e-commerce website designed with a clean, natural look and a smooth shopping experience ",
+    "description_zh": "一个现代化的美容与健康电商网站，以自然简约的设计风格，打造清晰、流畅的购物体验",
+    "description_zh_tw": "一個現代化的美容與健康電商網站，以自然簡約的設計風格，打造情緒、流暢的購物體驗",
+    "role_en": "Website Design & Development, UI/UX Design, E-Commerce Website Design, Responsive Design ",
+    "role_zh": "网站设计与开发、用户界面与体验设计、电商网站设计、响应式设计",
+    "role_zh_tw": "網站設計與開發、使用者介面與體驗設計、電商網站設計、響應式設計"
+  },
+  {
+    "id": "cassis landing page ",
+    "featured": true,
+    "category": "website",
+    "title_en": "Cassis — SaaS Landing Page",
+    "title_zh": "Cassis — SaaS 落地页",
+    "title_zh_tw": "Cassis — SaaS 落地頁",
+    "type_en": "Saas / Landing Page",
+    "type_zh": "SaaS 平台 / 营销落地页",
+    "type_zh_tw": "SaaS 平台 / 營銷落地頁",
+    "cover": "/assets/f0c4ca19-3df1-4f99-bf8f-6f4023ccfc74.jpeg",
+    "external_url": "https://cassis-879066927639.us-west1.run.app/",
+    "description_en": "A modern SaaS landing page for a project management platform that turns spreadsheets into professional timeline dashboards. Designed with a bold dark theme, interactive visuals, and clear calls to action to introduce the platform and encourage waitlist sign-ups.",
+    "description_zh": "一个现代化的SaaS 平台营销落地页，展示如何将电子表格转换成专业的项目时间线Dashboard。采用大胆的深色设计、互动式视角元素和清晰版的行动按钮，帮助访客了解平台功能，并引导潜在用户加入等待名单",
+    "description_zh_tw": "一個現代化的SaaS 平台行銷落地頁，展示如何將電子表格轉換成專業的專案時間線 Dashboard。採用大膽的深色設計、互動式視覺元素和清晰的行動按鈕，幫助訪客了解平台功能，並引導潛在使用者加入等候名單",
+    "role_en": "Website Design & Development, UI/UX, Landing Page",
+    "role_zh": "网站设计与开发、用户体验设计、营销落地页",
+    "role_zh_tw": "網站設計與開發、使用者體驗設計、行銷落地頁"
   }
 ]
