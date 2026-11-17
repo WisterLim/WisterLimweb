@@ -228,3 +228,33 @@ html[lang="zh-TW"] .chinese-layout .hero-intro h1,html[lang="zh-TW"] .chinese-la
 @media(max-width:760px){.header{height:66px}.wordmark{font-size:20px}.wordmark img{height:46px;max-width:140px}.nav{z-index:95}.nav-contact{display:inline-block;width:fit-content;margin-top:8px}.service-details{grid-column:2/-1}.service-plus{width:32px;height:32px;font-size:23px}.service-points{font-size:13px}.tally-popup-head{padding:18px 17px 13px}#tally-popup-content{height:min(73dvh,730px)}}
 @media(max-width:760px){.header.wrap{padding-inline:19px}.header .nav{left:0!important;right:0!important}}
 @media(prefers-reduced-motion:reduce){.hero-actions .button-primary,.hero-actions .text-link,.form-placeholder .enquiry-trigger{animation:none!important}}
+
+/* V5.2: quiet, editorial mobile controls — override Safari's native blue UI. */
+.header-actions .lang-toggle{
+ -webkit-appearance:none;appearance:none;color:var(--ink)!important;
+ background-color:transparent!important;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23171816' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+ background-repeat:no-repeat;background-position:right 12px center;
+ border:1px solid var(--ink)!important;border-radius:2px;
+ font-family:Manrope,Arial,sans-serif;font-size:11px;font-weight:800;
+ letter-spacing:.06em;line-height:1.2;padding:10px 32px 10px 12px;
+ min-width:74px;cursor:pointer;box-shadow:none!important;
+}
+.header-actions .lang-toggle:focus-visible,.header-actions .menu-toggle:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.header-actions .menu-toggle{
+ -webkit-appearance:none;appearance:none;color:var(--ink)!important;
+ display:none;align-items:center;justify-content:center;flex-direction:column;
+ width:40px;height:40px;padding:8px;border:0!important;border-radius:0;
+ background:transparent!important;box-shadow:none!important;cursor:pointer;
+}
+.header-actions .menu-toggle span{
+ display:block;width:25px;height:2px;margin:3px 0;background:var(--ink)!important;
+ border-radius:0;transform-origin:center;transition:transform .25s ease,opacity .2s ease;
+}
+.header-actions .menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(4px) rotate(45deg)}
+.header-actions .menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-4px) rotate(-45deg)}
+@media(max-width:760px){
+ .header-actions{gap:10px}
+ .header-actions .menu-toggle{display:flex}
+ .header-actions .lang-toggle{font-size:11px;padding:9px 29px 9px 10px;background-position:right 10px center;min-width:68px}
+}
